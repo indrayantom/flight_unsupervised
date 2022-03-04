@@ -57,9 +57,80 @@ import plotly.graph_objects as go
 ```
 
 ## Result Preview
-This stacked bar plot clearly shows the customers who have churned. First, the values of tenure and monthly charges were discretized/binned into 6 quantiles to create this stacked bar plot.
-![binning](https://user-images.githubusercontent.com/92590596/145628097-28917258-373b-4549-87af-6f2ba10b0161.jpg)
-The result appears an instinctive result as the churn likelihood gets smaller as the membership time gets longer. It also tells that more than 50\% of customers who only subscribed less than 4 months prefer to churn (mostly even churn in their first month). From MonthlyCharges binning, it can be seen that the premium customers who are billed more than 70 dollars per month are more likely to churn compared to other customers with less bill. From the business perspective, it is surely more beneficial for the company to have a great focus improving on the premium services since those services have more lost customers and donate more month-to-month income for the company. Another interesting result is the customer who only subscribes for basic service seems quite satistied with the service quality and less likely to churn.
+Based on LRFMC (developed version of LRFM) concept, the airline customer has been successfully clustered into 5 categories, which consist of :
+![newplot](https://user-images.githubusercontent.com/92590596/156713685-671d488d-c961-48dc-9e39-4b45a3c60711.png)
 
-## References
-http://www2.bain.com/Images/BB_Prescription_cutting_costs.pdf (explain why customer retention is very important for the company's life)
+**Customer base 1 (highest Mileage, Frequency and least Recency)**
+
+These customers have relatively high average discount rate, recent flight history, highest number of flight, highest flight mileage, and long membership time. High discount indicates they usually have high ticket prices. **Considered as the most ideal high-value customers or key customer**. Their proportion is around 8.6% of total customers. Must be prioritized by the company to maintain their satisfaction and loyalty hence becomes able to extend the high consumption level of such customer as much as possible.
+
+- Length : ⭐⭐⭐⭐
+
+- Recency : ⭐⭐⭐⭐⭐
+
+- Frequency : ⭐⭐⭐⭐⭐
+
+- Mileage : ⭐⭐⭐⭐⭐
+
+- Discount : ⭐⭐⭐⭐
+
+
+**Customer base 2 (highest Discount)**
+
+These customers have the highest discount rate, but there is relatively less recent flight history, low total flight mileage and relatively short membership time (new). The proportion of this customer category is around 7% of total customers. **These customers are considered as potential high value customers or key development customers** as they love the privilege (do not care about discount) whenever they fly, even for such short distance. 
+Their satisfactory is very important to be enhanced by the airline so they gradually become loyal key customers.
+
+- Length : ⭐⭐⭐
+
+- Recency : ⭐⭐
+
+- Frequency : ⭐⭐
+
+- Mileage : ⭐⭐
+
+- Discount : ⭐⭐⭐⭐⭐
+
+
+**Customer base 3 (highest Recency, least Frequency and Mileage)**
+
+These are customers with no recent flight record (highest Recency), least number of flights and mileage,  relativelylow average of discount and membership time. Such customers have low ticket prices, no recent flight history, uncertain loyalty, and care about discount so much (decide to buy ticket at sufficient high discount). It is better for the company to strengthen the contact with such customers since they are very likely to leave . The proportion of this customer is around 19%. **Considered as low value customers**.
+
+- Length : ⭐⭐
+
+- Recency : ⭐
+
+- Frequency : ⭐
+
+- Mileage : ⭐
+
+- Discount : ⭐⭐
+
+
+**Customer base 4 (lowest Length and Discount)**
+
+These customers have lowest discount rate and length, relatively less number of mileage and frequency, but have recent flight records. **With around 40% proportion, they are considered as general customers**. 
+
+- Length : ⭐
+
+- Recency : ⭐⭐⭐⭐
+
+- Frequency : ⭐⭐⭐
+
+- Mileage : ⭐⭐⭐
+
+- Discount : ⭐
+
+
+**Customer base 5 (highest length)**
+
+These customers have the longest membership time with proportion around 25% of total customers. They also have recent flight history with relatively high number of frequency and flight. **These are the most devoted customers (important customer retention)**, as they have the longest flight history and are therefore crucial to the company's success.
+
+- Length : ⭐⭐⭐⭐⭐
+
+- Recency : ⭐⭐⭐
+
+- Frequency : ⭐⭐⭐⭐
+
+- Mileage : ⭐⭐⭐⭐
+
+- Discount : ⭐⭐⭐
