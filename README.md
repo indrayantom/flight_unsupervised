@@ -26,7 +26,7 @@ The dataset used in this work is related to Airline customer value analysis. The
 - POINTS_SUM : Total cumulative points
 - POINT_NOTFLIGHT : Change times of non opportunity points
 
-Just in case you didn't know, the telco analysis indra.html file contains both the codes and the explanation. In addition, the professional writing of the analysis is also available in a .pdf file. You also can view the docs [here](https://indrayantom.github.io/telco_custmer_dea/) . Feel free to download and clone this repo 😃😉.
+Feel free to download and clone this repo, or view the Google Collab documentation [here](https://colab.research.google.com/drive/1tq0TWBWV4YiRQJS4PAkSwniyBs3x_oKF?usp=sharing) 😃😉.
 
 ## Objectives 
 This work is carried out to answer this problem : 
